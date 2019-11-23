@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+   // return ('Hello, World!');
+//});
+Route::get('/', 'WelcomeController@boot');
+Route::get('/info', 'InfoController@boot');
+Route::get('/video', 'VideoController@boot');
+Route::get('/contact', 'ContactController@boot');
