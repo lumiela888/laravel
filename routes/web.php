@@ -18,3 +18,4 @@ Route::get('/', 'WelcomeController@boot');
 Route::get('/info', 'InfoController@boot');
 Route::get('/video', 'VideoController@boot');
 Route::get('/contact', 'ContactController@boot');
+Route::get('/', 'DemoController@index');
